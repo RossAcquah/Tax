@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <title>Tax Calculator</title>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    </head>
+
+    <body>
+
+        <div id="container">
+            <h1>Ross's Tax Calculator</h1>
+
+            <div id="calculator">
+                <form>
+                    <label>
+                        How much was your Income?<br>
+                        $ <input type="text" id="incomeAmount"><br>
+                    </label>
+                    <label>
+                        Federal & State<br>
+                        <select id="serviceQuality">
+                            <option disabled selected value="0">-- Choose an option --</option>
+
+                            <option value="0.22">22% - Federal</option> 
+                            <option value="0.0765">7.65% - FICA</option>
+                            <option value="0.0495">4.95% - State</option>
+                            <option value="0">0% - Local</option>
+                            <option value="0.346">34.6%  - Total</option>
+                        </select>
+                    </label><br>
+                    <button type="button" id="calculate"> Calculate!</button>
+
+                </form>
+
+            </div> <!--calculator-->
+
+            <div id="totalTax">
+                    <sup>$</sup><span id="tip">0.00</span>
+                    <small id="each">each</small>
+
+            </div><!--totalTax-->
+
+        </div> <!--container-->
+
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+
+</html>
